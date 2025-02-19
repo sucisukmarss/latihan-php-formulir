@@ -24,16 +24,16 @@
 </html>
 
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if($_SERVER["REQUEST_METHOD"] == "POST"){
     $nama = $_POST["nama"];
     $alamat = $_POST["alamat"];
     $email = $_POST["email"];
     $telepon = $_POST["telepon"];
     
     echo "<h2>Data yang Diterima:</h2>";
-    echo "<p><strong>Nama Lengkap:</strong> $nama</p>";
-    echo "<p><strong>Alamat:</strong> $alamat</p>";
-    echo "<p><strong>Email:</strong> $email</p>";
-    echo "<p><strong>Nomor Telepon:</strong> $telepon</p>";
+    echo "Nama Lengkap:" .$nama."<br>";
+    echo "Alamat:" .$alamat."<br>";
+    echo "Email:" .$email."<br>";
+    echo "Nomor Telepon:" .$telepon."<br>";
 } else {
 ?>
